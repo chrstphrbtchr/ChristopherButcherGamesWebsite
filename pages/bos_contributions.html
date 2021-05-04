@@ -10,19 +10,28 @@
 <body>
     <div id="contributionsPage">
 
-    <h1>My Contributions to <i>Breach of Space</i></h1>
+        <h1>My Contributions to <i>Breach of Space</i></h1>
 
-    
-    <h2>Programming</h2>
-    <img src="../assets/img/portfolio/bos1.jpg" width="100%">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima fugit aliquam tempore cupiditate. Similique consequatur, earum tempore officiis eius magni? Veritatis minima eum doloremque ex praesentium magnam earum repellendus aliquid.</p>
 
-    <h2>Music</h2>
-    <img src="../assets/img/portfolio/bos2.jpg" width="100%">
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis corrupti et voluptas laboriosam provident illum id dolore ut hic soluta non placeat iure nam, cum assumenda fugiat! Error, delectus iusto?</p>
+        <h2>Programming</h2>
+        <p><i>Breach of Space</i> has gone through many forms on its way to being a stealth game. For the very first iteration, <i>Breach of Space</i> was a procedurally generated multi-user dungeon crawler. I implemented code that would produce a randomized dungeon of prefab rooms linking up at their doors. I also learned the coding basics of putting our game online for multiplayer. Starting in this version and continuing throughout, I have been in charge of our repositories (including our recent integration of Git LFS), prototyping, and much of the in-engine implementation (shaders, UI, prefabs, animations).</p>
+        <img src="../assets/img/portfolio/bos-camDiagram.png" width="75%">
+        <p>In its next iteration, <i>Breach of Space</i> was a management simulator with a unique viewpoint: a console of monitors in an office at the habitat. I began work on a system for controlling multiple robot workers and various objects from the screen-in-a-screen setup of this iteration. This system linked into our in-game shop and would eventually be involved in your interactions with your boss. I also created the typing minigame that mimics the robot workers’ typing on malfunctioning equipment, as well as a mock-instant messenger app to communicate with the robots and your superiors. </p>
+        <img src="../assets/img/portfolio/BOS_Prototype5f.gif" width="75%">
+        <p>For the pre-merge iteration, I worked on refining the scripts relating to camera & robot movements, changing perspectives and shifting to a more isometric overhead view. I created revamped prefabs of my previous robot worker versions, as well as a more modular interactables script. With the exception of some resource management scripting, much of this version was refining what had already been done in the previous iteration. This was done with our playtesting feedback in mind, allowing for better UX through the addition of player feedback elements (progress bars) and more intuitive controls (camera / robot view changing scripts). Though it was never implemented fully, I also programmed a system to allow for objects to be powered on and off depending on the number of resources available, allowing for more player choice in the game world. Finally, I added a shader to replace the older version, allowing not only for outline but for color fill and other effects to be called through code</p>
+        <img src="../assets/img/portfolio/bos-shaderExample.jpg" width="75%">
+        <p>As our team merged with another, we spent much of this iteration implementing their code and less on the older scripts. Much of what I did for this version of <i>Breach of Space</i> (up to this point) relates to FMOD integration of sound effects and music, in addition to directing, animating, and programming our first teaser trailer. In the future, I hope to add some utility AI, goal-oriented action planning, and/or behavior trees to <i>Breach of Space</i> now that we have non-playable enemy characters in the game.</p>
 
-    
-    
+        <h2>Music</h2>
+        <iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=2408887354/size=small/bgcol=333333/linkcol=fe7eaf/track=3172516687/transparent=true/" seamless><a href="https://christopherbutcher.bandcamp.com/album/portfolio-demos">Portfolio Demos! by Christopher Butcher</a></iframe>
+        <p>While the majority of my audio work happened during this past iteration, I have always had aural feedback and immersion in the back of my mind when programming <i>Breach of Space</i>. I worked with using usfxr, an in-engine synthesizer used to create basic sound effects without using as much space. I composed our first track (“Bachman-Turing Overtime”) to reflect both the chaotic nature of that iteration’s demo level and its two-minute time limit.</p>
+        <iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=2408887354/size=small/bgcol=333333/linkcol=fe7eaf/track=3914146423/transparent=true/" seamless><a href="https://christopherbutcher.bandcamp.com/album/portfolio-demos">Portfolio Demos! by Christopher Butcher</a></iframe>
+        <p>For the latest iterations I composed another track (“Greetings from <NULL>”), this time with adaptive music in mind. I arranged the track to increase in intensity as the chaos of the level grows, which fit not only the pre-merge version but also the current iteration. I worked with a few other sound designers outside of our team on pitches for sound effects and ambiance, overseeing the projects to keep them within the team’s unified creative vision. All of these were implemented using FMOD Studio middleware, as well as some scripts which I wrote as well.</p>
+        <img src="../assets/img/portfolio/bos-fmodSession.jpg" width="75%">
+        <p>This second major track was also edited down to fit in our teaser trailer (mentioned above). I also edited and mastered lines of external voiceover work to place over the track for the trailer using Adobe Audition. </p>
+
+
+
 
         <div style="padding: 30px 0 30px 0; text-align: center;">
             <p>Christopher Butcher 2021</p>
