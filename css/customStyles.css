@@ -91,3 +91,11 @@ body {
 .divider-custom-line {
     color: pink !important;
 } */
+
+#contributionsPage {
+    background-color: #311f3b;
+    color: white;
+    text-align: left;
+    margin: auto;
+    width: 70%;
+}

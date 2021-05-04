@@ -1,0 +1,19 @@
+body {
+    background-color: #311f3b;
+    background-color: #311f3b;
+    color: white;
+    text-align: left;
+    font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+#contributionsPage {
+    margin: auto;
+    width: 70%;
+}
+
+a {
+    color: white;
+}
