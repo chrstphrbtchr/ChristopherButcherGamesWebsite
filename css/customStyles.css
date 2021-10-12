@@ -123,3 +123,7 @@ body {
     width: 70%;
 }
 
+.img-fluid {
+    max-width: 100%;
+    height: calc(width * .75);
+  }
