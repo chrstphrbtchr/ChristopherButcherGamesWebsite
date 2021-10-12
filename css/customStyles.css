@@ -77,14 +77,31 @@ body {
     background-color: blue;
 }
 
+.twoColumns {
+    column-count: 2;
+}
+.insideColumns {
+    column-span: 2;
+}
+
 @media (max-width: 400px) {
     .navbar-brand {
         font-size: 1.05em;
     }
+
 }
 @media (max-width: 991px) {
     .navbar li {
         text-align: center;
+    }
+}
+
+@media (max-width: 800px) {
+    .twoColumns { 
+        column-count: 1;
+    }
+    .insideColumns {
+        column-span: 1;
     }
 }
 /* 
@@ -99,3 +116,4 @@ body {
     margin: auto;
     width: 70%;
 }
+
