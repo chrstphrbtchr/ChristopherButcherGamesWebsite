@@ -45,18 +45,18 @@ body {
     color: #190027;
 } */
 
-#contactForm {
+#contactFormspree {
     font-size: .8em !important;
 }
-#contactForm input, #contactForm textarea {
+#contactFormspree input, #contactFormspree textarea {
     border-bottom: 1px grey solid;
 }
 
-#contactForm button {
+#contactFormspree button {
     background-color: #311f3b !important;
     border: #311f3b !important;
 }
-#contactForm button:hover {
+#contactFormspree button:hover {
     color: pink;
 }
 
@@ -79,6 +79,8 @@ body {
 
 .twoColumns {
     column-count: 2;
+    orphans: 1;
+
 }
 .insideColumns {
     column-span: 2;
@@ -94,9 +96,13 @@ body {
     .navbar li {
         text-align: center;
     }
+
+    .youtube {
+        padding-top: 4em;
+    }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 750px) {
     .twoColumns { 
         column-count: 1;
     }
