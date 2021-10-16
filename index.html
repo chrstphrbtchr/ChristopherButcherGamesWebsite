@@ -126,7 +126,7 @@
                     <div class="col-md-6 col-lg-4 mb-5">
                         <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal6">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white">Survival Shooter Template Soundtrack</div>
+                                <div class="portfolio-item-caption-content text-center text-white">Survival Shooter Soundtrack</div>
                             </div>
                             <img class="img-fluid" src="./assets/img/portfolio/sss_FMOD_01.png" alt="Brightly-colored zombified creatures approach a child in a miniature world" />
                         </div>
@@ -194,7 +194,7 @@
                             <iframe style="border: 4px solid #e0f0df; border-radius: 4px; width: 100%; height: 300px; padding-right: 0px;" title="Christopher Butcher Music Player" src="https://bandcamp.com/EmbeddedPlayer/album=2408887354/size=large/bgcol=333333/linkcol=fe7eaf/artwork=small/transparent=true/" seamless><a href="https://christopherbutcher.bandcamp.com/album/portfolio-demos">Portfolio Demos! by Christopher Butcher</a></iframe>
                         </div>
                         <div class="col-lg-5 youtube">
-                            <iframe width="100%" height="300" style="border: 4px solid #e0f0df; border-radius: 4px;" src="https://www.youtube.com/embed/CQfkxlim5DA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe class="iframeFix" style="border: 4px solid #e0f0df; border-radius: 4px;" src="https://www.youtube.com/embed/CQfkxlim5DA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                         <div class="col-lg-1"></div>
                     </div>
@@ -332,9 +332,9 @@
                                           <div class="carousel-item">
                                             <img src="./assets/img/portfolio/bos1.jpg" class="d-block w-100 img-fluid rounded mb-5" alt="robots in a sci-fi lab">
                                           </div>
-                                          <div class="carousel-item">
+                                          <!-- <div class="carousel-item">
                                             <img src="./assets/img/portfolio/bos2.jpg" class="d-block w-100 img-fluid rounded mb-5" alt="robotsin a sci-fi lab">
-                                          </div>
+                                          </div> -->
                                           
                                         </div>
                                         <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -349,20 +349,50 @@
                                     <!-- Portfolio Modal - Text-->
                                     <p class="mb-5 text-justify">
                                         <i>In </i>Breach of Space<i>, you must defeat the evil corporation that 
-                                            is taking over your home planet. Stealthily distract, sabotage, and cause enough 
-                                            mayhem for the robotic staff to leave your home among the stars for good. </i></p>
+                                        is taking over your home planet. Stealthily distract, sabotage, and cause enough 
+                                        mayhem for the robotic staff to leave your home among the stars for good. </i></p>
                                     <p class="mb-5 text-justify">
-                                        On <i>Breach of Space</i> I serve as both Sound Design Lead 
-                                        & a founding member of the programming team. <i>Breach of Space</i> is 
-                                        currently slated for release on February 22nd, 2022. Our team has recently doubled in size, and we plan on
-                                         spending the summer completing the game with the help of our new members. <i>Breach of Space</i> is made 
-                                         in Unity with FMOD Studio integration.
+                                        On <i>Breach of Space</i> I serve as sound designer, composer, & AI programmer. <i>Breach of Space</i> is currently slated for release in early 2022. <i>Breach of Space</i> is made in Unity with FMOD Studio integration.
+                                    </p>
+                                    <p class="mb-5 text-justify">
+                                        <i>Breach of Space</i> has gone through many forms on its way to being a stealth game. For the very first iteration, <i>Breach of Space</i> was a procedurally generated multi-user dungeon crawler. I implemented code that would produce a randomized dungeon of prefab rooms linking up at their doors. I also learned the coding basics of putting our game online for multiplayer. Starting in this version and continuing throughout, I have been in charge of our repositories (Bitbucket & Git LFS), prototyping, and much of the in-engine implementation (shaders, UI, prefabs, animations).
+                                    </p>
+                                    <p class="mb-5 text-justify">
+                                        In its next iteration, <i>Breach of Space</i> was a management simulator with a unique viewpoint: a console of monitors in an office at the habitat. I began work on a system for controlling multiple robot workers and various objects from the screen-in-a-screen setup of this iteration. This system linked into our in-game shop and would eventually be involved in your interactions with your boss. I also created the typing minigame that mimics the robot workers’ typing on malfunctioning equipment, as well as a mock-instant messenger app to communicate with the robots and your superiors.
+                                        Finally, <i>Breach of Space</i> became the stealth game it currently is today. My priority for much of this iteration has been the AI relating to the Robot enemies & their Waypoints, as well as recording and implementing the adaptive audio soundtsrack and sound effects for the game.
+                                    </p>
+
+                                    <h4>Programming</h4><p></p>
+                                    <p class="mb-5 text-justify">
+                                        <img src="./assets/img/portfolio/bos_code_02.png" alt="page of written code" width="100%" height="auto" />
+                                    
+                                        The enemies in <i>Breach of Space</i> must perform various actions when approaching their destination, so I created a simple Waypoint system for the various types of destinations (Patrol, Working, Suspicion, among others). Each of these implement this abstract class' IEnumerator WaypointBehavior so that, regardless of where the Robots end up and their internal state, they will perform whatever function they need to at the end of their journey. I also added a method to reset the Robot's state to default and stop any audio playing because of it.
+                                    </p>
+                                    <p class="mb-5 text-justify">
+                                        
+                                        <img src="./assets/img/portfolio/bos_code_000.png" alt="page of written code" width="100%" height="auto" />
+                                    </p>
+                                    <p class="mb-5 text-justify">
+                                        
+                                        <img src="./assets/img/portfolio/bos_code_01.png" alt="page of written code" width="100%" height="auto" />
+                                    
+                                        Methods used by enemy Robots to detect the player character (both visually & aurally).
+                                    </p>
+                                    <p class="mb-5 text-justify">
+                                    <img src="./assets/img/portfolio/bos_code_001a.png" alt="page of written code" width="100%" height="auto" />
+                                    
+                                        Called from a RobotBlackboard (present in every Unity Scene in <i>Breach of Space</i>), this method creates and updates (when necessary) SuspicionWaypoints for a given Robot.
+                                    </p>
+                                    <h4>Audio</h4>
+                                    <p class="mb-5 text-justify">
+                                        <img src="./assets/img/portfolio/bos_FMOD_02.png" alt="page of written code" width="100%" height="auto" />
+                                        In <i>Breach of Space</i>, it's important to alert the player to world changes through multiple means, especially the music. Each non-diegetic musical piece must be written with at least two distinct levels of intensity (though for some, there might be three or four, such as in <a href="https://christopherbutcher.bandcamp.com/track/greetings-from-null" style="text-decoration: underline;">"Greetings from NULL"</a> pictured above). These "versions" are switched between as the player character is seen/pursued by the Robotic staff, but can also adapt based on the success of an objective (such as hacking a forcefield) or even the safety of the player.
                                     </p>
                                     <h4>Learn More:</h4><p></p>
-                                        <a href="./pages/bos_contributions.html" target="blank"><button class="btn btn-primary">
+                                        <!-- <a href="./pages/bos_contributions.html" target="blank"><button class="btn btn-primary">
                                         <i class="fa-times fa-fw"></i>
                                         Personal Contributions
-                                    </button></a><p></p>
+                                    </button></a><p></p> -->
                                         <a href="https://sites.google.com/iu.edu/breachofspace/home" target="blank"><button class="btn btn-primary">
                                         <i class="fa-times fa-fw"></i>
                                         Design Wiki
@@ -684,8 +714,8 @@
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Image-->
-                                    <!-- <img class="img-fluid rounded mb-5" src="assets/img/portfolio/submarine.png" alt="" /> -->
-                                    <div id="carouselExampleControls6" class="carousel slide" data-ride="carousel">
+                                    <img class="img-fluid rounded mb-5" src="./assets/img/portfolio/sss_FMOD_01.png" alt="An audio interface showing many labeled tracks" />
+                                    <!-- <div id="carouselExampleControls6" class="carousel slide" data-ride="carousel">
                                         <div class="carousel-inner">
                                           <div class="carousel-item active">
                                             <img src="./assets/img/portfolio/sss_FMOD_01.png" class="d-block w-100 rounded " alt="a single sheep appears in a larger grid of different textures, such as grass, water, and stone">
@@ -694,11 +724,11 @@
                                             <img src="./assets/img/portfolio/sss_01.png" class="d-block w-100 rounded" alt="a single sheep appears in a larger grid of different textures, such as grass, water, and stone">
                                           </div>
                                           <!--Copy and Repeat this part for more carousel images-->
-                                          <div class="carousel-item">
+                                          <!-- <div class="carousel-item">
                                             <img src="./assets/img/portfolio/sss_01.png" class="d-block w-100 rounded" alt="code">
                                           </div>
                                           <!-- end copy here-->
-                                        </div>
+                                        <!-- </div>
                                         <a class="carousel-control-prev" href="#carouselExampleControls6" role="button" data-slide="prev">
                                           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                           <span class="sr-only">Previous</span>
@@ -707,9 +737,18 @@
                                           <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                           <span class="sr-only">Next</span>
                                         </a>
-                                      </div>
+                                      </div>  -->
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-5 text-justify">Alan please add detail.</p><!-- HEY LOOK! UPDATE THIS!!!!!-->
+                                    <p class="mb-5 text-justify">
+                                        The goal of this project was to take an existing project (here, a Unity tutorial scene) and creating a pitch for a soundtrack based on the game's tone, theme, and gameplay using FMOD Studio. I decided to create a 3D adaptive audio soundtrack for this Survival Shooter tutorial, blending childlike playfulness with darker themes into a sort of danse macabre.
+                                    </p>
+                                    <p class="mb-5 text-justify">
+                                        Each of the three enemy types are given their own instrument (or instrumental group). As an enemy approaches, the instrument becomes louder, and when they are defeated their designated instrument becomes quieter. In addition, the drums become louder and softer depending on the total amount of enemies in the level. However, after the player character's health dips below a certain threshold, the music and instrumentation becomes more intense, moving from classical and child-like to triplet-based dance rock to aggressive punk.
+                                    </p>
+                                    <p class="mb-5 text-justify">
+                                        The sound effects for each enemy also reflect the materials they are made of as well as warped versions of their real-world counterparts (such as glitched Furby & Teddy Ruxpin sounds for the Zombears combined with the sound of breaking cassette tapes & muffled hits).
+                                    </p>
+                                    <iframe  width="100%" class="iframeFix" style="border: 4px solid #e0f0df; border-radius: 4px;" src="https://www.youtube.com/embed/CQfkxlim5DA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
                                     <button class="btn btn-primary" data-dismiss="modal">
                                         <i class="fas fa-times fa-fw"></i>
                                         Close Window
