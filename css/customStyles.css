@@ -87,42 +87,23 @@ body {
 }
 
 .iframeFix {
-    width: 100%;
-    height: calc(70vw/1.77);
-}
-
-@media (max-width: 400px) {
-    .navbar-brand {
-        font-size: 1.05em;
-    }
-
-}
-@media (max-width: 991px) {
-    .navbar li {
-        text-align: center;
-    }
-
-    .youtube {
-        padding-top: 4em;
-    }
-    .iframeFix {
-        width: 100%;
-        height: calc(90vw/1.77);
-    }
-}
-
-@media (max-width: 750px) {
-    .twoColumns { 
-        column-count: 1;
-    }
-    .insideColumns {
-        column-span: 1;
-    }
-
+    width:100%;
+    height: 300px;
 }
 /* 
-.divider-custom-line {
-    color: pink !important;
+.youtube {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    width: 100%;
+} */
+
+/* .youtube iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
 } */
 
 #contributionsPage {
@@ -141,4 +122,50 @@ body {
   #contactFormspree input, #contactFormspree textarea {
     border-bottom: 1px grey solid;
 }
+
+@media screen and (max-width: 749px) {
+    .navbar-brand {
+        font-size: 1.05em;
+    }
+        .youtube {
+        margin-top: 4em;
+    }
+    .iframefix {
+        width:100%;
+        height: 300px;
+    }
+    .navbar li {
+        text-align: center;
+    }
+}
+@media screen and (min-width: 750px) {
+    .navbar li {
+        text-align: center;
+    }
+    .twoColumns { 
+        column-count: 1;
+    }
+    .insideColumns {
+        column-span: 1;
+    }
+    .iframefix {
+        width: 100%;
+        height: 360px;
+    }
+}
+@media screen and (min-width: 991px) {
+
+    .iframeFix {
+        width: 100%;
+        height: 500px;
+    }
+}
+
+
+/* 
+.divider-custom-line {
+    color: pink !important;
+} */
+
+
 
