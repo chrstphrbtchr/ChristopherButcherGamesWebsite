@@ -124,6 +124,12 @@ body {
 }
 
 @media screen and (max-width: 749px) {
+    .twoColumns { 
+        column-count: 1;
+    }
+    .insideColumns {
+        column-span: 1;
+    }
     .navbar-brand {
         font-size: 1.05em;
     }
@@ -142,22 +148,24 @@ body {
     .navbar li {
         text-align: center;
     }
-    .twoColumns { 
-        column-count: 1;
-    }
-    .insideColumns {
-        column-span: 1;
-    }
+
     .iframefix {
         width: 100%;
         height: 360px;
     }
+    .youtube {
+        margin-top: 4em;
+    }
 }
+
 @media screen and (min-width: 991px) {
 
     .iframeFix {
         width: 100%;
         height: 500px;
+    }
+    .youtube {
+        margin-top: 0px;
     }
 }
 
