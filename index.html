@@ -76,7 +76,7 @@
                         <!-- <p class="lead">Hello! My name is Christopher Butcher, and I am a Game Programmer, Sound Designer, & Composer. As a programmer, I enjoy trying to solve any problem provided by my design team, looking for new ways to enhance the program and make the code more efficient. </p><p class="lead">When writing music and mixing sound effects, my main goal is to immerse the player in the game world without overwhelming them. This is made possible through middleware implementation, combining my passion for both music and code. </p><p class="lead">Currently, I am honing these skills on <i>Breach of Space</i> as both Sound Design Lead & a founding member of the programming team. In <i>Breach of Space</i>, you must defeat the evil corporation that is taking over your home planet. Stealthily distract, sabotage, and cause enough mayhem for the robotic staff to leave your home among the stars for good. </p> -->
                         <p class="lead text-justify">Hello! My name is Christopher Butcher, I am a game programmer, sound designer, and composer. I love music, video games, and learning new things, which is why I pursued a BS in Game Design after receiving a BA in Instrumental Music Education. </p>
                         <p class="lead text-justify">I've done a little bit of everything, from pixel art to shaders, writing game AI to writing story outlines, recording and implementing voice lines, and a bunch of stuff in between. I enjoy thinking about how each individual piece interacts with the others and working on a team to make it all sing.</p>
-                        <p class="lead text-justify">I'm looking for work in the games industry! I'm currently living in Bloomington, Indiana, but am up for relocation or remote work & collaboration.</p> 
+                        
                         </div>
                     </div>
                     <div class="col-lg-1"></div>
@@ -224,6 +224,7 @@
                     <div class="divider-custom-line"></div>
                 </div>
                 <!-- Contact Section Form-->
+                <p class="lead text-justify">I'm looking for work in the video game industry! I'm currently living in Bloomington, Indiana, but am up for relocation or remote work & collaboration. If you want to connect or just chat, feel free to send me an email at christopher@christopherbutcher.com! Thanks!</p> 
                 <div class="row">
                     <div class="col-lg-8 mx-auto">
                         <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19.-->
@@ -335,9 +336,9 @@
                                           <div class="carousel-item">
                                             <img src="./assets/img/portfolio/bos1.jpg" class="d-block w-100 img-fluid rounded mb-5" alt="robots in a sci-fi lab">
                                           </div>
-                                          <!-- <div class="carousel-item">
-                                            <img src="./assets/img/portfolio/bos2.jpg" class="d-block w-100 img-fluid rounded mb-5" alt="robotsin a sci-fi lab">
-                                          </div> -->
+                                          <div class="carousel-item">
+                                            <img src="./assets/img/portfolio/bos_01.png" class="d-block w-100 img-fluid rounded mb-5" alt="robotsin a sci-fi lab">
+                                          </div>
                                           
                                         </div>
                                         <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -471,7 +472,9 @@
                                         the forgotten instruments from slimes & bring them together. </i></p>
                                     <p class="mb-5 text-justify">The goal of <i>Codetta</i> was to craft a short game 
                                         (roughly five minutes) with an emphasis on art style and sound design over the 
-                                        course of six weeks in late 2020. In addition to programming, I composed all of 
+                                        course of six weeks in late 2020. </p><p></p>
+                                        <iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=2408887354/size=small/bgcol=333333/linkcol=fe7eaf/track=1057260513/transparent=true/" seamless><a href="https://christopherbutcher.bandcamp.com/album/original-video-game-soundtrack-s">Original Video Game Soundtrack(s) by Christopher Butcher</a></iframe>
+                                        <p class="mb-5 text-justify">In addition to programming, I composed all of 
                                         the music, edited & mixed the sound effects, created all art assets, and designed 
                                         the layout for the game. Fonts & original sound effects were found online under the 
                                         CC0 license. My idea for the game focused on outliving your perceived obsolescence, and 
@@ -545,12 +548,51 @@
                                     <p class="mb-5 text-justify">Robin's Quest! <i>is about a princess who wakes 
                                         to find her kingdom overrun with monsters. She must venture across her 
                                         kingdom to figure out what is causing this mayhem and how to stop it!</i></p>
-                                    <p class="mb-5 text-justify">Over the summer of 2020, I wanted to
-                                         find a project to keep myself busy while also teaching myself 
-                                         more about Unity implementation & C# programming. So I gave myself
-                                          a challenge: make a clone of The Legend of Zelda: A Link to the 
-                                          Past in Unity. While I've had to pause work on it to focus on other projects, 
-                                          it was invaluable to my education and I plan on finishing it before Summer 2022.
+                                    <p class="mb-5 text-justify">Over the summer of 2020, I wanted to find a project to 
+                                        keep myself busy while also teaching myself more about Unity implementation & C# 
+                                        programming. So I gave myself a challenge: make a clone of <i>The Legend of Zelda: 
+                                        A Link to the Past</i> in Unity. I was inspired by creepypasta horror stories such 0
+                                        as "Ben Drowned" & real-life glitches like Missingno. in the original <i>Pokémon</i> games, incorporating these elements 
+                                        into my <i>Zelda</i> clone for fun. This lead to me adding other styles of gameplay 
+                                        (such as text adventure, turn-based RPG, and first-person 3D puzzle-solving) into 
+                                        the planning for <i>Robin's Quest!</i>, both expanding the scope of the game and my 
+                                        own education.</p>
+                                    <h4>Programming</h4><p></p>
+                                    <p class="mb-5 text-justify">
+                                        <img src="./assets/img/portfolio/rq_dialogue.png" alt="page of written code (Dialogue System in Robin's Quest!)" width="100%" height="auto" />
+                                        
+                                        When figuring out the base systems of <i>Robin's Quest!</i>, I wanted to recreate 
+                                        the classic video game scrolling dialogue system in Unity on my own. 
+                                        I watched a few videos explaining how others handled this 
+                                        (as Unity's built-in UI system perfromed differently), and began to write my own 
+                                        code based on their explanation. I decided that there would only be a finite 
+                                        amount of physical space in each of the three lines in the text boxes. This 
+                                        allowed for consistent look & style among all conversations, signs, and 
+                                        tutorials / player alerts.</p>
+                                        <p class="mb-5 text-justify">
+                                        Each line of the text box is a string that can be edited in-engine, with each set of 3 being stored in a List. Each of those textbox Lists is stored also in a List, allowing for differences in conversation length. I added button icons so that they could be easily swapped out if necessary for alternate control schemes. I also wanted to add shake, color, wave, and other attributes to words to imply tone and emphasis. I set this up similar to HTML tags, allowing for each line to be written in a ScriptableObject and attached to the NPC / sign / trigger volume. The instantiation of multiple GameObjects, as well as the amount of time to parse multiple tags at runtime, does cause a dip in performance, but because the player is not in control during these moments it is not as easily noticeable. I would like to rewrite some of this code in the future, but for now it works and it helped me to understand how I wanted to create the system on my own.</p>
+                                        <h4>Music</h4><p></p>
+                                        <p class="mb-5 text-justify"></p>
+                                        For much of the music in <i>Robin's Quest!</i>, I wanted to create variations on different
+                                        character themes.</p>
+
+                                        <!--ROBINTRODUCTION-->
+                                        <p class="mb-5 text-justify"></p>
+                                        <iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=2408887354/size=small/bgcol=333333/linkcol=fe7eaf/track=592627060/transparent=true/" seamless><a href="https://christopherbutcher.bandcamp.com/album/original-video-game-soundtrack-s">Original Video Game Soundtrack(s) by Christopher Butcher</a></iframe>
+                                        The title screen of the game features a heroic version of Robin's theme.
+                                        <!--ROBIN'S REST-->
+                                        <p class="mb-5 text-justify"></p>
+                                        <iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=2408887354/size=small/bgcol=333333/linkcol=fe7eaf/track=2475689116/transparent=true/" seamless><a href="https://christopherbutcher.bandcamp.com/album/original-video-game-soundtrack-s">Original Video Game Soundtrack(s) by Christopher Butcher</a></iframe>
+                                        The game over music plays like a lullaby, with arpeggios rocking the player back and forth. 
+                                        <!--BUY RIGHT PRINCESS-->
+                                        <p class="mb-5 text-justify"></p>
+                                        <iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=2408887354/size=small/bgcol=333333/linkcol=fe7eaf/track=1313461180/transparent=true/" seamless><a href="https://christopherbutcher.bandcamp.com/album/original-video-game-soundtrack-s">Original Video Game Soundtrack(s) by Christopher Butcher</a></iframe>
+                                        Meanwhile, the shop music plays like harsh muzak while still recalling the motif. </p></p>
+
+                                        <iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=2408887354/size=small/bgcol=333333/linkcol=fe7eaf/track=327979340/transparent=true/" seamless><a href="https://christopherbutcher.bandcamp.com/album/original-video-game-soundtrack-s">Original Video Game Soundtrack(s) by Christopher Butcher</a></iframe>
+                                        Later in the game when Robin is fighting a boss, the music will transition from the nostalgic NES-style chiptune used thus far to acoustic instrument renditions of the same songs. Towards the end of the game, the soundtrack becomes noticeably more modern (reflecting the break from the retro world). The above track demonstrates how this will sound.
+
+                                    </p>
                                     </p> <!-- Don't forget to add programming section to this w/ link or img. -->
                                     <h4>Learn More:</h4><p></p><p>
                                         <a href="https://bitbucket.org/chrstphrbtchr/robins_quest/src/master/" target="blank"><button class="btn btn-primary">
@@ -664,9 +706,9 @@
                                             <img src="./assets/img/portfolio/gw_01.png" class="d-block w-100 rounded" alt="a single sheep appears in a larger grid of different textures, such as grass, water, and stone">
                                           </div>
                                           <!--Copy and Repeat this part for more carousel images-->
-                                          <div class="carousel-item">
+                                          <!-- <div class="carousel-item">
                                             <img src="./assets/img/portfolio/gw_code_01.png" class="d-block w-100 rounded" alt="code">
-                                          </div>
+                                          </div> -->
                                           <!-- end copy here-->
                                         </div>
                                         <a class="carousel-control-prev" href="#carouselExampleControls5" role="button" data-slide="prev">
@@ -679,8 +721,40 @@
                                         </a>
                                       </div>
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-5"><i></i></p>
-                                    <p class="mb-5"></p>
+                                    <p class="mb-5 text-justify"><i>Gridworld</i> was a semester-long assignment for a class on 
+                                        Game AI taught by Mike Sellers, with the goal being the creation of an AI-driven game world
+                                        without the need of player input.</p>
+                                    <p class="mb-5 text-justify"></p>The course went over various topics in artificial 
+                                        intelligence, including Dijkstra's Algorithm, A* Pathfinding, Goal-Oriented Action 
+                                        Planning (GOAP), Utility AI, and Behavior Trees, among other topics. Over the course of the 
+                                        semester, we added to the Unity "game" to showcase these topics as they were covered.</p>
+                                    <h4>A* Pathfinding</h4><p></p>
+                                    <p class="mb-5 text-justify">
+                                        <img src="./assets/img/portfolio/gw_code_02.png" alt="page of written code (A*, pt.1)" width="100%" height="auto" />
+                                        <img src="./assets/img/portfolio/gw_code_03.png" alt="page of written code (A*, pt.2)" width="100%" height="auto" />
+                                        <img src="./assets/img/portfolio/gw_code_04.png" alt="page of written code (A*, pt.3)" width="100%" height="auto" />
+                                        
+                                        Here is the method responsible for A* pathfinding (adapted from the previously implemented Dijkstra's Algorithm pathfinding method) for the Sheep (or in my case Dogs) & Wolves (Slimes) of <i>Gridworld</i>.
+                                    </p>
+                                    <h4>Utility AI</h4><p></p>
+                                    <p class="mb-5 text-justify">
+                                        <img src="./assets/img/portfolio/gw_code_05.png" alt="page of written code (Utility AI)" width="100%" height="auto" />
+                                        
+                                        Before making a decision, Sheep must call this method to determine the values for their Utility AI. Then, depending on the winning value, another method is called to determine the navigation endpoint.
+                                    </p>
+                                    <h4>GOAP</h4><p></p>
+                                    <p class="mb-5 text-justify">
+                                        <img src="./assets/img/portfolio/gw_code_06.png" alt="page of written code (GOAP)" width="100%" height="auto" />
+                                        
+                                        All GOAP actions implement this abstract class. Once the Sheep or Wolf know what they should do next, the endpoint location tile is found using FineLocationForGOAP. If the preconditions of the GoapAction are aligned with the Sheep's/Wolf's current state as well as the World's current state (isPossible), PerformAction is called, behaving differently depending on whether a Sheep or a Wolf is calling the method (since there are some actions both can call). Finally, AdjustConditions is called, updating both the Wolf's/Sheep's internal state as well as the overall World state to those present in the GoapAction's postconditions Dictionary.
+                                    </p>
+                                    <h4>Tiles & Nodes</h4><p></p>
+                                    <p class="mb-5 text-justify">
+                                        <img src="./assets/img/portfolio/gw_code_07.png" alt="page of written code (TileHandler)" width="100%" height="auto" />
+                                        <img src="./assets/img/portfolio/gw_code_08.png" alt="page of written code (Tiles)" width="100%" height="auto" />
+                                        
+                                        This is code relating to the Tile infrastructure of <i>Gridworld</i> as well as information needed for pathfinding & utility AI.
+                                    </p>
                                     <h4>Learn More:</h4><p></p><p>
                                         <a href="https://bitbucket.org/christopherbutcher/gridworld/src/master/" target="blank"><button class="btn btn-primary">
                                         <i class="fa-times fa-fw"></i>
